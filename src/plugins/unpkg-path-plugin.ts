@@ -13,10 +13,7 @@ export const unpkgPathPlugin = () => {
                 if (args.path === 'index.js') {
                     return {
                         loader: 'jsx',
-                        contents: `
-              import message from 'tiny-test-pkg';
-              console.log(message);
-            `,
+                        contents: ""
                     };
                 }
             });
