@@ -11,6 +11,9 @@ export const unpkgPathPlugin = () => {
 
             build.onLoad({filter: /.*/}, async (args: any) => {
                 console.log("VahidOnLoad", args)
+                console.log("VahidOnLoad", args)
+                console.log("VahidOnLoad", args)
+                console.log("VahidOnLoad", args)
                 if (args.path === 'index.js') {
                     return {
                         loader: 'jsx',
