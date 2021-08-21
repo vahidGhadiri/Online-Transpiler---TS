@@ -32,12 +32,20 @@ const App: React.FC = () => {
         setCode(result.outputFiles[0].text)
     }
 
+    const handleURL = () => {
+        const url = new URL("vahid/vahab/shiva", window.location.href).href
+        console.log(url)
+    }
+
     return (
         <div>
             <textarea onChange={e => setInput(e.target.value)} value={input}/>
             <div>
                 <button onClick={handleOnClick}>Submit</button>
             </div>
+            <button onClick={handleURL}>
+                Click on me!
+            </button>
             <pre>{code}</pre>
         </div>
     )
